@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import MainLayouts from './Layouts/MainLayouts.jsx';
 import Home from './Pages/Home/Home.jsx';
 import Login from './Pages/Login/Login.jsx';
+import DashboardLayout from './Layouts/DashboardLayout.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
     </Routes>
     <Routes>
     <Route path='/' element={<Login/>}/>
+    <Route path='dashboard' element={<DashboardLayout/>}/>
     </Routes>
 </BrowserRouter>
 )

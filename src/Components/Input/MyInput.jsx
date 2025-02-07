@@ -1,13 +1,10 @@
+import { Link } from "react-router";
+
 const FloatingLabelInput = () => {
   return (
     <div className="mt-6">
-        <label
-        htmlFor="email"
-        className=" text-red-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base"
-      >
-        Enter Email Address
-      </label>
-    <div className="relative flex justify-center my-6 items-center w-full">
+        <p className="text-red-600 ml-16"> Enter Email Address</p>
+    <div className="relative flex justify-center mb-6 items-center w-full">
       <input
         type="email"
         id="email"
@@ -29,12 +26,12 @@ const FloatingLabelInput = () => {
       
     </div>
     <p className="flex justify-end mx-auto md:w-[400px] w-full"> Forget Password? </p>
-    <p className="flex items-center justify-start md:justify-center md:w-60">
+    <p className="flex items-center justify-start mx-6 md:justify-center md:w-60">
     <input type="checkbox" name="" id="" />
     <p>Remember me?</p>
     </p>
     <div className="md:w-[400px] w-full p-3 h-14 mx-auto my-6 rounded-2xl bg-[#BE0D23]">
-      <p className="text-white text-center text-lg font-semibold">Login</p>
+      <Link to='dashboard'><p className="text-white text-center text-lg font-semibold">Login</p></Link>
     </div>
    
     <div className="flex justify-center items-center gap-2">
