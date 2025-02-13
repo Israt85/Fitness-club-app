@@ -5,16 +5,17 @@ import MainLayouts from './Layouts/MainLayouts.jsx';
 import Home from './Pages/Home/Home.jsx';
 import Login from './Pages/Login/Login.jsx';
 import DashboardLayout from './Layouts/DashboardLayout.jsx';
+import Dashboard from './Pages/Dashboard/Dashboard.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
  <Routes>
-      <Route path="/home" element={<MainLayouts />} />
+      <Route path='/' element={<Login/>}/>
+      <Route path='dashboard' element={<DashboardLayout/>}>
+    <Route path='page' element={<Dashboard/>}>
       
-    </Routes>
-    <Routes>
-    <Route path='/' element={<Login/>}/>
-    <Route path='dashboard' element={<DashboardLayout/>}/>
+    </Route>
+    </Route>
     </Routes>
 </BrowserRouter>
 )
