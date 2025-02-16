@@ -87,7 +87,7 @@ Search
                </div>
 
             </div>
-            <div className='h-96 bg-red-50'>
+            <div className='h-auto bg-red-50'>
               <Outlet/>
             </div>
           </div>
